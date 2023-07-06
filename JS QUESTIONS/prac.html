@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function displaybutton(){
+        var currdate =  new Date();
+        var show = currdate.toDateString();
+
+        alert("current date " + show);
+
+        var c =document.getElementById("dateshow");
+        c.value= show;
+
+
+        }
+
+        
+
+
+    </script>
+
+
+    <button onclick="displaybutton()"> display date</button>
+    <input type="text" id="dateshow" readonly>
+    
+</body>
+</html>

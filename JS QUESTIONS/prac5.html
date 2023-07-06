@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday App</title>
+  
+</head>
+<body>
+
+    <script>
+
+        function getDayOfWeek() {
+            var birthdateInput = document.getElementById('birthdate');
+            var birthdate = new Date(birthdateInput.value);
+
+            //alert(birthdate.toDateString());
+            
+            var options = { weekday: 'long' };
+            var dayOfWeek = birthdate.toLocaleDateString('en-US', options);
+            
+            alert('You were born on a ' + dayOfWeek + '!');
+          }
+
+
+    </script>
+  <h1>Birthday App</h1>
+  <label for="birthdate">Enter your birth date:</label>
+  <input type="date" id="birthdate">
+  <button onclick="getDayOfWeek()">Get Day of the Week</button>
+  
+</body>
+</html>

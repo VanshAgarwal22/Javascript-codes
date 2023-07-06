@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fact1(num){
+            if(num==0)
+            return 1;
+            else
+            return num*fact1(num-1);
+        }
+
+       function fact()
+        {
+            var num  = parseInt(prompt("enter the number"));
+            var f  = fact1(num);
+            alert("fctorial of 2 is : "+f);
+
+        }
+       
+
+        
+    </script>
+
+    <button onclick="fact()"> </button>
+
+
+
+
+</body>
+</html>
